@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+.square {
+  background: #3498db;
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  line-height: 1.8;
+  border-radius: 4%;
+  width: 159px;
+  height: 150px;
+  box-shadow: 0 8px 0 #1f74ad;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-shadow: 2px 3px 0px rgb(0 0 0 / 60%);
+}
+
+.square:hover {
+  background-color: #52A7E0;
+  box-shadow: 0 8px 0 #2280BF
+}

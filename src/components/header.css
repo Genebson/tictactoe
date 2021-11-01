@@ -1,0 +1,49 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  font-family: 'montserrat', sans-serif;
+  background: #fed766;
+  width: 52vmin;
+  height: 20vmin;
+  text-align: center;
+  color: #000;
+  border-radius: 4% 4% 0% 0%;
+  box-shadow: 0 -8px 0 #fed766;
+}
+
+.header > h1 {
+  font-size: 3em;
+  text-shadow: 2px 3px 0px rgb(255 255 255 / 60%);
+}
+
+.header > ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.header > ul > li {
+  display: inline-block;
+  color: #000;
+  border: 1px solid #000;
+  margin-left: -1px;
+  width: 160px;
+  line-height: 2;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header > ul > li.active {
+  background: #000;
+  color: #fff;
+}
+
+.header > ul > li:first-child {
+  border-radius: 10px 100px / 120px;
+}
+
+.header > ul > li:last-child {
+  border-radius: 100px 10px / 120px;
+}

@@ -1,0 +1,31 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.div-reset-game {
+  width: 150px;
+}
+
+.div-new-game {
+  width: 130px;
+}
+
+.btn-reset-game, .btn-new-game {
+  position: absolute;
+  font-family: 'montserrat', sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-shadow: 2px 3px 0px rgb(0 0 0 / 60%);
+  border-radius: 0% 100% 50% 50% / 30% 0% 70% 70%;
+  background: linear-gradient(to top, #222 0%, #111 100%);
+  box-shadow: 0 8px 0 #111;
+  background-color: #000;
+  border: none;
+  width: 130px;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 10px;
+  outline: none;
+}

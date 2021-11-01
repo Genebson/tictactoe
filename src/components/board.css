@@ -1,0 +1,26 @@
+.main-game {
+  display: flex;
+  justify-content: center;
+}
+
+.main-board {
+  background: linear-gradient(to bottom, #111 0%, #222 100%);
+  width: 52vmin;
+  height: 50vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 0% 0% 4% 4%;
+  box-shadow: 0 8px 0 #111;
+}
+
+.main-game > .main-board {
+  position: relative;
+}
+
+.main-board::after {
+  content: '';
+  position: absolute;
+  background-color: #2ab7ca;
+  transition: 0.7s;
+}

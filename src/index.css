@@ -1,0 +1,8 @@
+body {
+  background-color: #000;
+  color: white;
+  background-image: url('../src/assets/background/paper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
