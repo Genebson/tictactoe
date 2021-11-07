@@ -71,8 +71,20 @@ export const CustomHook = () => {
       tieSound.play()
     }
 
-    setTiles(newTiles)
-    setCurrentPlayer(newPlayer)
+    setTiles(() => {
+      if (computerMode === false) {
+        setCurrentPlayer(newPlayer)
+        return newTiles;
+      }
+
+      if (computerMode === true) {
+        const tilesCPU = [...tiles]
+        const indexAi = aiMoves();
+        console.log(indexAi);
+        tilesCPU[indexAi] = 'O'
+        return tilesCPU
+      }
+    })
   }
 
   const resetGame = () => {
@@ -85,7 +97,8 @@ export const CustomHook = () => {
   }
 
   const aiMoves = () => {
-    const index = Math.floor(Math.random() * tiles.length )
+    const index = Math.floor(Math.random() * tiles.length)
+    console.log(index);
     return index
   }
 
