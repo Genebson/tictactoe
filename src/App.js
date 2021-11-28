@@ -1,7 +1,7 @@
 import React from "react";
 import { Board } from "./components/Board";
 import { Header } from "./components/Header";
-import { CustomHook } from "../src/useCustomHook";
+import { useTicTacToeGameState } from "../src/useTicTacToeGameState";
 
 function App() {
   const { 
@@ -17,7 +17,7 @@ function App() {
     setComputerMode,
     computerMode,
     startGame
-  } = CustomHook()
+  } = useTicTacToeGameState()
   return (
     <div className="App">
       <Header count={count} aiMoves={aiMoves} setComputerMode={setComputerMode} resetGame={resetGame}/>
